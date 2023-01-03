@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title> feedback</title>
+        <style>
+            .text{
+                font-style: italic;
+                font-size: 10ex;
+                font-family: fantasy;
+            }
+            
+            h1{
+        font-family: -apple-system, Bl inkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 4ex;
+            font-weight: 500;
+            text-align: center;
+    }
+    body{
+        background-image: url("feedback.jpg");
+        background-size: 0.1px;
+        background-attachment: fixed;
+        text-decoration: wavy;
+        text-align: center;
+        text-transform: capitalize;
+        text-overflow: ellipsis;
+        font-size: 200%;
+    }
+    .previous{
+            background-color: purple;
+            color: whitesmoke;
+            font-size: 1cm;
+            text-align: left;
+            margin-left: 35cm;
+    }
+    button{
+        font-size: 100%;
+        background-color: burlywood;
+        font-style: italic;
+    }
+        </style>
+        <script type="text/javascript">
+        function fn1(){
+           var str = document.getElementById("text1").value;
+           alert("thankyou for your feedback");
+           var rd1=document.getElementById("rd1");
+           var rd2=document.getElementById("rd2");
+           var rd3=document.getElementById("rd3");
+           if(rd1.checked==true)
+           alert("the channel selected is:"+rd1.value);
+           else if(rd2.checked==true)
+           alert("the channel selected is:"+rd2.value);
+           else if(rd3.checked==true)
+           alert("the channel selected is:"+rd3.value);
+           else
+           alert("no channel is selected");
+        }
+        </script>
+    </head>
+    <body>
+        <h1>WE REALLY VALUE YOUR FEEDBACK!!!!</h1>
+
+        <form>
+
+       Text us your feedback:  <input id="text1" placeholder="text us" value=" "><br>
+        <br>Rate our poetry website: <input id="rad1" name="group1" type="radio" value="very helpful">very helpful
+        <input id="rad2" name="group1" type="radio" value="least helpful">least helpful
+        <input id="rad3" name="group1" type="radio" value="not helpful">not helpful<br>
+       <br> <button onclick="fn1()" id = "btn1"> send </button>
+       <br>
+    </form>
+    <a href="shantel.html" class="previous">&laquo;
+        HOME</a>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "C:\\Users\\Shantell\\frontend"
+		},
+		{
+			"path": "C:\\Users\\Shantell\\Documents\\frontend"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "frontend"
+	}
+}

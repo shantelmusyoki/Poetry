@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!--required meta tags-->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--Bootstrap CSS-->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">-->
+    <title>IT'S ALL IN THE MIND</title>
+   <script src="jscode.js"></script>
+    <style>
+    body{
+        position: absolute;
+        margin:0cm;
+        padding:0px 0px 0px;
+        font-family: Arial;
+        font-size: 1ex;
+        background-blend-mode:lighten;
+        background-repeat: round;
+        background-size: 57%;
+        opacity: 0.9;
+        background-image: url('gold.jpg');
+    }
+    
+    .body{
+        display: none;
+    }
+    @media only screen and (min-width: 768px) {
+        header{
+            padding: 0 20px;
+        }
+        .menu-toggle{
+            display: block;
+        }
+        header nav{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            
+        }
+        .body{
+        display: block;
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    body{
+        position: absolute;
+        margin:5cm;
+        padding:10px 0px 0px;
+        font-size: 4ex;
+    }
+    body{
+        margin:20cm;
+        padding:0px 0px 0px;
+        font-size: 4ex;
+    }
+
+    }
+    
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0 100px;
+        background:burlywood;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    header .Logo{
+
+        padding: 10px 20px;
+        line-height: 50px;
+        height:50px;
+        float: left;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: right;
+        color:white;
+        margin-left: 29cm;
+ }
+  header nav{
+float: left;
+ }
+ header nav ul{
+     margin: 0;
+     padding: 0px;
+     display: flex;
+ }
+ header nav ul li{
+     list-style: none;
+ }
+ header nav ul li a{
+     height: 40px;
+     line-height: 50px;
+     padding: 0px 10px;
+     color: gray;
+     text-decoration: none;
+     display: block;
+     
+    
+}
+  header nav ul li a:hover{
+     background: rgba(0,0,0,0.5);
+     border-radius: 6px;
+ }
+ nav ul li a.active{
+     background:#e2472f;
+     color: #fff;
+     border-radius: 4px;
+ }
+ .menu-toggle{
+    color:#fff;
+     float:right;
+     line-height: 50px;
+     font-size: 24px;
+     cursor: pointer;
+     display: none;
+ }
+ section{
+     width: 100%;
+     height:100vh;
+ }
+ 
+.wrapper{
+    min-height: 100vh;
+    display:flex;
+    justify-content: left;
+    align-items: baseline;
+}
+.search_box{
+    background-color: #643fef;
+    position: relative;
+    padding: 15px;
+    border-radius: 50px;
+    display: flex;
+}
+.search_box .search_btn{
+ width:30px;
+ height:30px;
+ border-radius: 20%;
+ background:#7a5cf0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color:#fff;
+ margin-right: 2px;
+ cursor: pointer;
+}
+.search_box .input_search{
+    outline: none;
+    border: 0;
+    background:#7a5cf0;
+    color:#fff;
+    padding: 10px 10px;
+    width:3cm;
+    height: 0.5cm;
+    border-radius: 30px;
+}
+::placeholder{
+    color:#fff;
+}
+::-webkit-input-placeholder{
+    color:#fff;
+}
+button{
+    margin: auto;
+    padding: 20px;
+    width: 300px;
+    background-color: pink;
+    border: 2px solid white;
+    font-family: "Century Gotholic";
+    font-size: 35px;
+    display: block;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+</style>
+<script src="https://kit.fontawesome.com/3c8444bbc2.js"></script>
+</head>
+<body>    
+    <header>
+    <div class="Logo">shantel's poetry</div>
+            <nav>
+            <ul>
+                <li><a class="active" href="#"> Home</a></li>
+                <li> <a href="hurting.html"> poems</a></li>
+                <li><a href="songs.html"> songs</a></li>
+                <li><a href="articles.html"> Articles</a></li>
+                <li><a href="feedback.html"> feedback</a></li>
+                <li><a href="poetry.html">About</a></li>
+                <li><a href="contact.html"> Contact</a></li>
+               </ul>
+               </nav>
+    <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    </header>
+    <div class="form">
+        <button onclick="help()">new poem</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
